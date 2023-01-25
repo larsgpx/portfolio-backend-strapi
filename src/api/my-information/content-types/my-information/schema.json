@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "my_informations",
+  "info": {
+    "singularName": "my-information",
+    "pluralName": "my-informations",
+    "displayName": "my-information",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "email": {
+      "type": "email"
+    },
+    "socialmedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "socialmedia.socialmedia"
+    },
+    "about": {
+      "type": "text"
+    },
+    "CV": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
